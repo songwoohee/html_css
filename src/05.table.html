@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>TABLE</title>
+  <style>
+    table{
+      border-collapse: collapse;
+    }
+    th, td{
+      border: 1px solid #ccc;
+      text-align: center;
+    }
+    th{
+      background-color: cadetblue;
+    }
+  </style>
+</head>
+<body>
+  <title>표 만들기</title>
+    <table>
+      <thead>  <!-- 헤드 영역이라고 표기해줌 , 웹 상 표기는 안됨-->
+        <tr>
+          <th>번호</th>
+          <th>상품명</th>
+          <th>수량</th>
+          <th>가격</th>
+        </tr>
+      </thead>
+      <tbody>  <!-- 바디 영역이라고 표기해줌 , 웹 상 표기는 안됨-->
+        <tr>
+          <td>1</td>
+          <td>콜라</td>
+          <td>1개</td>
+          <td>1,500원</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>사이다</td>
+          <td>2개</td>
+          <td rowspan="2">2,000원</td>  <!-- 행과 행을 병합할 때 rowspan -->
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>탄산수</td>
+          <td>3개</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td>총금액</td>
+          <td colspan="3">5,500원</td> <!-- 열과 열을 병합할 때 colspan -->
+        </tr>
+      </tfoot>
+    </table>
+
+</body>
+</html>
