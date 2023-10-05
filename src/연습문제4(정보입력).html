@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>정보입력</title>
+  <style>
+    .btn1 {
+        display: inline-flex;
+        align-items: center;
+    }
+    .btn2 {
+        display: inline-flex;
+        align-items: center;
+    }
+  </style>
+</head>
+<body>
+  <form action="#" method="get">
+    <fieldset>
+      <legend>기본 정보</legend>
+      <div>
+        <label for="id">아이디</label>
+        <input type="text" id="id" value="woohee" readonly>
+      </div>
+      <div>
+        <label for="password">패스워드</label>
+        <input type="text" id="password">
+      </div>
+    </fieldset>
+    <fieldset>
+      <legend>세부 정보</legend>
+      <div>
+        <label for="mail">이메일</label>
+        <input type="text" id="mail" placeholder="@를 넣어야 됩니다.">
+      </div>
+      <div>
+        <label for="tel">전화번호</label>
+        <input type="tel" id="tel" placeholder="하이픈을 넣지 마세요">
+      </div>
+      <div>
+        <label for="age">나이</label>
+        <input type="age" id="age">
+      </div>
+    </fieldset>
+    <fieldset>
+      <legend>주소 입력</legend>
+      <label for="city">도시</label>
+      <select id="city">
+        <optgroup label="서울시" >
+          <option value="강남구">강남구</option>
+          <option value="관악구">관악구</option>
+          <option value="서초구">서초구</option>
+        </optgroup>
+        <optgroup label="경기도 성남시">
+          <option value="중원구">중원구</option>
+          <option value="분당구">분당구</option>
+          <option value="수정구">수정구</option>
+        </optgroup>
+      </select>
+    </fieldset>
+    <fieldset>
+      <legend>성별</legend>
+        <label for="male">남성</label>
+        <input type="radio" name="gender" id="male" value="남자">
+        <label for="female">여성</label>
+        <input type="radio" name="gender" id="female" value="여자">
+    </fieldset>
+    <fieldset>
+      <legend>직업</legend>
+       <label for="student">학생</label>
+       <input type="radio" id="student" value="학생">
+       <label for="employee">회사원</label>
+       <input type="radio" id="employee" value="회사원">
+       <label for="housewife">주부</label>
+       <input type="radio" id="housewife" value="주부">
+       <label for="jobless ">무직</label>
+       <input type="radio" id="jobless" value="무직">
+    </fieldset>
+    <fieldset>
+      <legend>취미를 선택하세요</legend>
+        <label for="ex">운동</label>
+        <input type="radio" id="ex" value="운동">
+        <label for="music">음악</label>
+        <input type="radio" id="music" value="음악">
+        <label for="painting">그림</label>
+        <input type="radio" id="painting" value="그림">
+    </fieldset>
+    <p>
+      <label for="date">가입일</label>
+      <input type="date"  id="date">
+    </p>
+    <p> <label for="post">소개글</label> </p>
+    <p> <textarea name="post" id="post" cols="50" rows="10"></textarea> </p>
+  
+    <button type="submit" class="btn1">
+      <img src="../images/bear.png" width="30" alt="곰돌이">
+      제출
+    </button>
+    <button type="reset" class="btn2">
+      <img src="../images/bear.png" width="30" alt="곰돌이2">
+      초기화
+    </button>
+  </form>
+ 
+</body>
+</html>

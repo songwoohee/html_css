@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!-- 1. <style>
+    h1 {
+      font-size: 22px;
+      font-style: italic;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 400px;
+      height: 100px;
+      background-color: royalblue;
+      color: white;
+    }
+    div {
+      width: 200px;
+      color: red;
+      background-color: bisque;
+      padding: 2px 10px;
+    } -->
+  <!--1. 끝 </style> -->
+  <style>
+      /* div는 태그 선택자를 의미*/
+      * {
+          color: red;
+      }
+      div {
+        color: rgb(32, 197, 172);
+      }
+      p {
+        font-style: italic;
+        color: black;
+      }
+      /* 클래스 선택자 : .(점)를 붙여야함*/
+      .accent {
+          border: 1px solid #333;
+          padding: 5px;
+      }
+      /* 그룹 선택자 : 여러 선택자를 하나로 묶음 ,(콤마)로 구분. p&accent 를 같은색으로 묶어줌 */
+      p, .accent {
+        color: darkblue;
+      }
+
+      .bg {
+        background-color: #ddd;
+      }
+      /* 아이디 선택자 : 태그에 id 키워드, # 클래스명 { } / react에선 사용 못함 */
+      #container {
+        width: calc(100vw - 60px);
+        /* height: calc(100vh - 60px); */
+        margin: 10px auto;
+        padding: 10px;
+        border: 1px solid #000;
+        background-color: rosybrown;
+      }
+      /* 기본 속성 선택자 :  */
+      a[href] {
+        font-size: 1.6em;
+      }
+      /* a[target="_blank"] {
+        color: yellow;
+      } */
+      /* 자식 선택자 */
+      .box > p {
+          font-size: 1.2em;
+          color: red;
+          font-weight: 900;
+      }
+      /* 인접 형제 선택자 : + 기호를 사용해서 지정된 요소의 바로 다음 형제 요소를 선택, h1 다음에 있는 h2만 선택됨 */
+        h1 + h2 {
+          color: chartreuse;
+        }
+        /* 일반 형제 선택자 : 특정 요소 이후에 나오는 모든 현제 요소 선택. h1 다음에 나오는 h2 전부 바꿔줌.*/
+        h1 ~ h2 {
+          color: brown;
+        }
+        /* 가상 요소 선택자 : 요소의 특정 부분에 스타일을 적용 하는 방법 */
+        /* (:) 콜론으로 시작하여 요소의 내용이 아닌 요소의 특정 부분에 스타일을 적용 */
+        h1::before {
+          content: "★";
+			    color: red;
+        }
+        h1::after {
+          content: "★";
+			    color: blue;
+        }
+        /* 가상 클래스 선택자 : 요소의 상태를 이용해 선택자를 지정하는 방법 */
+        /* link : 한번도 방문하지 않은 링크일 때 선택
+           visited : 한번이라도 방문한적이 있는 링크 */
+        a:link {
+          color: orange;
+        }
+        a:visited {
+          color:green;
+        }
+
+
+  </style>
+</head>
+<body>
+  <!-- 1. 문법 형식 
+    <h1>CSS에 대해서 공부 합니다.</h1>
+  <div>
+    <p>브라우저 기본 스타일</p>
+    <p>인라인 스타일</p>
+    <p>내부 스타일</p>
+    <p>외부 스타일</p>
+  </div> -->
+
+  <!-- 2. 브라우저 기본 스타일  -->
+  <div id="container">
+      <h1 class="accent bg">레드향</h1>
+      <p>껍질에 붉은 빛이 돌아 <span class="accent">레드향</span>이라 불린다.</p>
+      <p>레드향은 한라봉과 귤을 교배한 것으로 일반 귤보다 2~3배 크고, 과육이 붉고 통통하다.</p>
+      <p>비타민 C와 비타민 P가 풍부해 혈액순환, 감기예방 등에 좋은 것으로 알려져 있다.</p>
+  </div>
+  <!-- 3. 속성 선택 : 카카오만 글 색상 변경 가능 -->
+  <a href="http://naver.com">네이버</a>
+  <br/>
+  <a href="http://kakao.com" target="_blank" >카카오</a> 
+  <br/>
+  <a href="http://www.disneyplus.com/ko-kr/home">디즈니</a>
+  <br/>
+  <a href="http://www.netflix.com/kr">넷플릭스</a>
+
+  <div class="box">
+    <p>아이폰 15 Pro Max</p>
+    <div>
+      <p>아이폰 15 Mini</p>
+    </div>
+    <p>아이패드</p>
+  </div>
+
+  <div>
+    <h1>제목 1번 입니다.</h1>
+    <h2>제목 2번 입니다.</h2>
+    <h3>제목 3번 입니다.</h3>
+    <h2>제목 4번 입니다.</h2>
+  </div>
+
+</body>
+</html>
