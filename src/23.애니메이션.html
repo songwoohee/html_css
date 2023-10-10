@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Animation</title>
+  <!-- 애니메이션 : 전환 효과 속성보다 더 정확하고 부드럽게 전환 효과 제어 가능 -->
+  <style>
+    div {
+      width: 100px;
+      height: 100px;
+      border-color: red;
+      animation-name: bgchange;
+      animation-duration: 5s;
+    }
+    @keyframes bgchange {
+      0% {background-color: red;}
+      25% {background-color: orange;}
+      50% {background-color: yellow;}
+      75% {background-color: green;}
+      100% {background-color: blue;}
+    }
+  </style>
+</head>
+<body>
+  <div></div>
+</body>
+</html>

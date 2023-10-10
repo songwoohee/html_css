@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title> 
+  <style>
+  /* 배경 색상 : background-color <색상값> */
+  /* back-ground-image :  */
+    div {
+      width: 100px;
+      height: 100px;
+      background-color: red;
+    }
+    .bg {
+      /* 원본 이미지보다 2배 크게 설정(요소의 배경 크기가 삽입하려는 이미지보다 크면 이미지를 자동으로 반복해서 채움) */
+      /* width: 320px;
+      height: 120px; */
+
+      /* 원본 이미지보다 작게
+      width: 80px;
+      height: 60px; */
+
+      /* 사이즈 다시  */ 
+      width: 320px;
+      height: 300px;
+      border: 1px solid black;
+      background-image: url('../images/coffee.jpg');
+      background-repeat: no-repeat;
+      /* size 속성 (속성으로 이미지 크기를 지정해서 처리) : auto(기본속성), 
+        cover(가로 세로 비율 유지하며 배경 꽉 채움), contain(가로 세로 비율 유지하며 요소 안에 들어가도록 축소하거나 확대)  */ 
+      background-size: cover;
+      background-position: center;
+    }
+  </style>
+</head>
+<body>
+<div></div>
+<div class="bg"></div>
+  
+</body>
+</html>
