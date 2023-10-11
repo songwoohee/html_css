@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!-- <style>
+     특정 항목만 정렬 방법을 지정하는 align-self 속성
+    .flex-container {
+      display: flex;
+      width: 300px;
+      height: 200px;
+      background-color: bisque;
+      border: 1px solid black;
+    }
+    .flex-item {
+      display: flex;
+      width: 80px;
+      height: 50px;
+      border: 1px solid darkblue;
+      color: white;
+      background-color: orange;
+      justify-content: center;
+      align-items: center;
+    }
+    .flex-item:nth-child(1n) {
+      align-self: center;
+    }
+    .flex-item:nth-child(2n) {
+      align-self: flex-end;
+    }
+  </style> -->
+  
+  <style>
+     header {
+      width: 96vw;
+      display: flex;
+      background-color: royalblue;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+    }
+    .box {
+      display: flex;
+      width: 100px;
+      height: 100px;
+      margin: 4px;
+      border: 3px dashed red;
+      justify-content: center;
+      align-items: center;
+      background-color: orange;
+    }
+    nav {
+            display: flex;
+            flex-grow: 1;
+            margin: 4px;
+            background-color: red;
+            border: 3px dashed black;
+        }
+        .navbar {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        background-color: #333;
+        padding: 1rem;
+       }
+
+       .navbar a {
+        text-decoration: none;
+        color: white;
+        font-size: 1.2rem;
+       }
+
+       .navbar a:hover {
+        color: #aaa
+       }
+
+    /* .flex-item:nth-child(5) {
+      flex-grow: 1;
+    }  */
+
+  </style>
+</head>
+<body>
+  <header>
+      <div class="box">1</div>
+      <nav class="navbar">
+        <a href="#">메뉴1</a>
+        <a href="#">메뉴2</a>
+        <a href="#">메뉴3</a>
+        <a href="#">메뉴4</a>
+      </nav>
+      <div class="box">3</div>
+</header>
+</body>
+</html>

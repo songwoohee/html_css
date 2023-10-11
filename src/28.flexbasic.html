@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <style>
+    .flex-container {
+      display: flex;
+      /* flex-direction : 플렉스의 주축 방향을 결정 */
+      /* flex-direction: row; */
+      /* flex-wrap : 아이템이 컨테이너 영역을 벗어날 때 어떻게 처리할지 결정
+                     no-wrap이 기본 특성(한줄에 내용이 모두 들어갈 수 있도록 맞춰서 알아서 들어감.) wrap으로 바꾸면 튀어나가거나 다른줄로 밀림  */
+      /* flex-wrap: wrap-reverse; */
+      /* flex-flow : 방향, 떨어지는 주축을 한번에 설정 할 수 있음.  */
+      flex-flow: row wrap;
+      /* justify-content : 주축에 대한 정렬 방법 space-between : 끝에 맞춰서 균일하게 정렬, space-evenly : between보다 마진을 균일하게 정렬*/
+      justify-content: space-evenly;
+      /* align-items : 교차축에 대한 정렬 */
+      align-items: center;
+      width: 300px;
+      height: 200px;
+      background-color: bisque;
+      border: 1px solid #000;
+    }
+    .flex-item {
+      width: 80px;
+      height: 50px;
+      margin: 2px;
+      /* text-align: center; */
+      /* 만약 플렉스 아이템 글자를 중앙으로 오게 하고 싶으면 display: flex;, justify-content: center; align-items: center; */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: 1px solid darkblue;
+      color: white;
+      background-color: orange;
+    }
+    .flex-item:nth-child(2n) {  /* 2n -> 짝수만 선택 */ 
+      background-color: orangered;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="flex-container">
+    <div class="flex-item">item1</div>
+    <div class="flex-item">item2</div>
+    <div class="flex-item">item3</div>
+    <div class="flex-item">item4</div>
+    <div class="flex-item">item5</div>
+    <div class="flex-item">item6</div>
+  </div>
+  
+</body>
+</html>
