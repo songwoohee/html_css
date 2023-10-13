@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>갤러리</title>
+  <style>
+    @font-face {
+      font-family: SF-Pro;
+      src: url(../src/font/SF-Pro.ttf) format(ttf);
+    }
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      background-color: #eee;
+      font-family: SF-Pro;
+    }
+
+#container {
+    display : grid;
+    grid-template-columns: repeat(auto-fit, 300px);
+    gap: 1rem;
+}
+
+  .card-view {
+    background-color: white;
+    box-shadow: 1px 1px 5px black;
+    display: flex;
+    flex-direction: column;
+    height: 320px;
+    padding: 0 24px;
+  }
+
+  .card-header {
+      font-size: 1.5rem;
+      text-align: center;
+      padding: 10px 0;
+  }
+  .card-image {
+      background-size: cover;
+      height: 60%;
+  }
+  .card-desc {
+      font-size: 0.8rem;
+      padding: 10px 0;
+  }
+
+
+    .img_1 {
+      background-image: url(../images/그리드갤러리/cup-1.jpg);
+    }
+    .img_2 {
+      background-image: url(../images/그리드갤러리/cup-2.jpg);
+    }
+    .img_3 {
+      background-image: url(../images/그리드갤러리/cup-3.jpg);
+    }
+    .img_4 {
+      background-image: url(../images/그리드갤러리/cup-4.jpg);
+    }
+    .img_5 {
+      background-image: url(../images/그리드갤러리/cup-5.jpg);
+    }
+    .img_6 {
+      background-image: url(../images/그리드갤러리/cup-6.jpg);
+    }
+    .img_7 {
+      background-image: url(../images/그리드갤러리/cup-7.jpg);
+    }
+    .img_8 {
+      background-image: url(../images/그리드갤러리/cup-8.jpg);
+    }
+    
+
+  </style>
+</head>
+<body>
+  <div id="container">
+    <div class="card-view">
+      <div class="card-header">사진 제목</div>
+      <div class="card-image img_1"></div>
+      <div class="card-desc">Lorem ipsum dolor sit amet, 
+        consectetur adipisicing elit. Ullam, numquam. 
+        Neque mollitia esse blanditiis facere</div>
+    </div>
+    <div class="card-view">
+      <div class="card-header">사진 제목</div>
+      <div class="card-image img_2"></div>
+      <div class="card-desc">Lorem ipsum dolor sit amet,
+        consectetur adipisicing elit. Ullam, numquam.
+        Neque mollitia esse blanditiis facere</div>
+    </div>
+    <div class="card-view">
+      <div class="card-header">사진 제목</div>
+      <div class="card-image img_3"></div>
+      <div class="card-desc">Lorem ipsum dolor sit amet,
+        consectetur adipisicing elit. Ullam, numquam.
+        Neque mollitia esse blanditiis facere.</div>
+    </div>
+    <div class="card-view">
+      <div class="card-header">사진 제목</div>
+      <div class="card-image img_4"></div>
+      <div class="card-desc">Lorem ipsum dolor sit amet,
+        consectetur adipisicing elit. Ullam, numquam.
+        Neque mollitia esse blanditiis facere.</div>
+    </div>
+    <div class="card-view">
+      <div class="card-header">사진 제목</div>
+      <div class="card-image img_5"></div>
+      <div class="card-desc">Lorem ipsum dolor sit amet,
+        consectetur adipisicing elit. Ullam, numquam.
+        Neque mollitia esse blanditiis facere.</div>
+    </div>
+    <div class="card-view">
+      <div class="card-header">사진 제목</div>
+      <div class="card-image img_6"></div>
+      <div class="card-desc">Lorem ipsum dolor sit amet,
+          consectetur adipisicing elit. Ullam, numquam.
+          Neque mollitia esse blanditiis facere.</div>
+  </div>
+  <div class="card-view">
+      <div class="card-header">사진 제목</div>
+      <div class="card-image img_7"></div>
+      <div class="card-item-desc">Lorem ipsum dolor sit amet,
+          consectetur adipisicing elit. Ullam, numquam.
+          Neque mollitia esse blanditiis facere.</div>
+  </div>
+  <div class="card-view">
+    <div class="card-header">사진 제목</div>
+    <div class="card-image img_7"></div>
+    <div class="card-item-desc">Lorem ipsum dolor sit amet,
+        consectetur adipisicing elit. Ullam, numquam.
+        Neque mollitia esse blanditiis facere.</div>
+</div>
+</body>
+</html>

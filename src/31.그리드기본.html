@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <style>
+    .grid-item {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: royalblue;
+      border: 1px solid orangered;
+    }
+    .grid-item:nth-child(2n) {
+      background-color: orange;
+    }
+    .grid-container {
+      height: 400px;
+      width: 400px;
+      display: grid;
+      background-color: bisque;
+      /* grid-template-columns: 200px 200px 100px 50px 20px; */
+      /* grid-template-rows: 100px 100px 100px; */
+
+      /* grid-template-columns: 1fr 3fr 2fr;    1대3대2 비율로 떨어진다. */
+      /* grid-template-columns: 100px 1fr 100px;  양옆은 100px로 고정되고 가운데만 창 유동적으로 움직임 */
+
+      /* auto-fit : 자동 채우기, 컨테이너 기준 
+         auto-fill: 자동 채우기, 아이템이 기준  */
+      grid-template-columns: 100px 100px 100px;
+      justify-content: start;
+      /* grid-template-rows: 100px 100px; */
+      gap: 2px;
+
+    }
+  </style>
+</head>
+<body>
+  <div class="grid-container">
+    <div class="grid-item">그리드 박스1</div>
+    <div class="grid-item">그리드 박스2</div>
+    <div class="grid-item">그리드 박스3</div>
+    <div class="grid-item">그리드 박스4</div>
+    <div class="grid-item">그리드 박스5</div>
+  </div>
+</body>
+</html>
